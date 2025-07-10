@@ -97,4 +97,12 @@ streamlit run app.py
 open in your browswer
 http://localhost:8501
 
+![Screenshot 2025-07-10 110123](https://github.com/user-attachments/assets/cdf150ce-7b13-4ad7-ad8e-e1a635051400)
+
+
+![Screenshot 2025-07-10 110146](https://github.com/user-attachments/assets/b2fb1e60-0957-4931-9a29-b3daa5b91765)
+
+![Screenshot 2025-07-10 110208](https://github.com/user-attachments/assets/8d3fa3c9-188b-43fd-b518-eb4438db6a2a)
+
+
 
