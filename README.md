@@ -1,78 +1,91 @@
-🥗 AI Diet Recommender –
-An AI-powered app that generates personalized diet plans based on user attributes like age, gender, body composition, and activity level.
+🥗 AI Diet Recommender
 
-This was built using:
+An AI-powered offline diet planning app that generates personalized meal plans using LangChain + Ollama (llama3) through a clean Streamlit UI.
 
-🧠 LangChain: For structured prompt templates and chaining logic
+🚀 Features
 
-🤖 Ollama (local LLM): Running Meta’s llama3 model
+Personalized diet plan generation
 
-💻 Streamlit: For the user interface
+Fully offline (local LLM via Ollama)
 
-🔁 LangChain LCEL: To connect prompts to models seamlessly
+LangChain LCEL for prompt → model chaining
 
+No API keys required
 
-💡 What the App Does
-Users enter:
-
-Age
-
-Gender
-
-Body type (Lean, Overweight, etc.)
-
-Activity level (Sedentary, Active, etc.)
-
-Click a button → the app generates a detailed AI-powered diet plan using a locally running LLM via LangChain + Ollama. No cloud API keys needed 
-
+Simple Streamlit interface
 
 🧠 Tech Stack
 Tool	Purpose
 Streamlit	Frontend UI
-LangChain	PromptTemplate + LCEL chaining
+LangChain	Prompt templates + chaining
+LCEL	Connects prompts to LLM
 Ollama	Local LLM runner
-llama3	Language model
+llama3	LLM used
 Python	Backend logic
 
 
 📁 Project Structure
-bash
-Copy
-Edit
+
+```bash
 📁 diet-app/
-├── app.py                # Streamlit frontend
-├── generate_diet.py      # LangChain + LLM backend logic
-└── requirements.txt      # Install dependencies
+├── app.py
+├── generate_diet.py
+└── requirements.txt
+```
 
 
-🖥️ Setup Instructions (Works Fully Offline)
+🖥️ Setup Instructions (Fully Offline)
+✅ Step 1: Clone the Repository
 
-✅ Step 1: Clone or Download
-bash
-Copy
-Edit
-git clone https://github.com/yourusername/diet-app
+```bash
+git clone https://github.com/parinitay/diet-ai
+
+```
+
+```bash
 cd diet-app
 
-✅ Step 2: Create a Virtual Environment (Optional but clean)
-bash
-Copy
-Edit
-python -m venv venv
-venv\Scripts\activate      # On Windows
-# OR
-source venv/bin/activate   # On Mac/Linux
+```
 
-✅ Step 3: Install Required Packages
-bash
-Copy
-Edit
+
+
+
+✅ Step 2: Create a Virtual Environment
+Windows:
+
+```bash
+python -m venv venv
+```
+
+
+```bash
+venv\Scripts\activate
+```
+
+
+Mac/Linux:
+
+```bash
+python3 -m venv venv
+```
+
+
+```bash
+source venv/bin/activate
+```
+
+
+
+✅ Step 3: Install Dependencies
+
+```bash
 pip install -r requirements.txt
+```
+
+
+
 requirements.txt contains:
 
-nginx
-Copy
-Edit
 streamlit
 langchain
 langchain-core
@@ -80,22 +93,26 @@ langchain-community
 langchain-ollama
 
 ✅ Step 4: Install Llama3 via Ollama
-If you haven't already:
 
-bash
-Copy
-Edit
+```bash
 ollama pull llama3
-Make sure Ollama is installed. Download from https://ollama.com
+```
 
-✅ Step 5: Run the App!
-bash
-Copy
-Edit
+
+✅ Step 5: Run the App
+
+```bash
 streamlit run app.py
+```
 
-open in your browswer
-http://localhost:8501
+
+
+Open in your browser at:
+
+```bash
+[streamlit run app.py](http://localhost:8501)
+```
+
 
 ![Screenshot 2025-07-10 110123](https://github.com/user-attachments/assets/cdf150ce-7b13-4ad7-ad8e-e1a635051400)
 
